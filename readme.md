@@ -81,3 +81,7 @@ CATransaction.commit()
 # Sidenote
 
 [This article](https://medium.com/@flyosity/your-spring-animations-are-bad-and-it-s-probably-apple-s-fault-784932e51733) about springs on iOS is mostly wrong, in that it assumes that adding a duration to a spring leads to non-natural springs, but under the hood, iOS computes the actual tension and friction for the spring simulation based on dampingRatio and duration. The same [calculations](https://github.com/koenbok/Framer/blob/master/framer/Animators/SpringCurveValueConverter.coffee) are used in Framer to convert these values.
+
+As you can see in the animation below, the same spring animation is created, regardless of which animation API is used:
+
+![Animation](Animation.gif)
